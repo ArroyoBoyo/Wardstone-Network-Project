@@ -1,13 +1,12 @@
 # Wardstone Network
 
-The network for Wardstone Federal Credit Union, a fictional Las Vegas credit union, built and run as the business grows from a 12-person office taken over from a previous IT provider to two large offices, three branches and two ISPs.
+Introducing Wardstone Federal Credit Union, a fictional credit union based in Las Vegas, Nevada. This is how I took the business from a single 12-person office to two large offices and three branches, with redundant connectivity across two ISPs.
 
 Every stage starts with a business event. The growth causes real problems, and each problem is reproduced in the lab, fixed with a core networking practice, and proven with before-and-after evidence.
 
 Built in GNS3 (VyOS, Arista EOS, FRR, Alpine Linux) with real Cisco gear: a Catalyst 3560-CX switch and a Catalyst 9130 access point.
 
-> Final architecture diagram goes here once Stage 5 is done.
-
+* Final architecture diagram *
 ## Stages
 
 | Stage | Size | What goes wrong | Status |

@@ -1,0 +1,16 @@
+# Large image files never go in Git
+*.iso
+*.qcow2
+*.vmdk
+*.swi
+*.tar.xz
+*.bin
+# Secrets
+*.key
+*.pem
+.env
+secrets/
+# OS and editor clutter
+.DS_Store
+Thumbs.db
+.vscode/

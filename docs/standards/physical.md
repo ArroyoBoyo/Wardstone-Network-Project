@@ -26,7 +26,7 @@ EX: jack `A-10` is patch panel A, port 10, in that site's MDF. Jacks served by a
 - Closets locked, access limited and logged, a camera on the MDF door from Stage 2.
 - Card-terminal cabling never runs through public space (PCI DSS Requirement 9).
 
-## Port map format Example
+## Port map format example
 
 | Switch port | Patch panel port | Wall jack | VLAN | Device | Notes |
 |---|---|---|---|---|---|

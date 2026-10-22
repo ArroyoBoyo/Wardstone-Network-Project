@@ -9,12 +9,10 @@ Every device gets this before it carries any traffic. This is all done manually 
 - [ ] Enable secret for privileged CLI (Cisco and Arista)
 - [ ] Management only on VLAN 99 (or the loopback for routers)
 - [ ] NTP from lv01-edge-01 (from HQ from Stage 3)
-- [ ] Logging buffered with timestamps; syslog to the services VM from Stage 3
+- [ ] Logging buffered with timestamps and syslog (to the services VM from Stage 3)
 - [ ] Unused ports in VLAN 999 and shut down
 - [ ] Native VLAN 998 on every trunk
-- [ ] A description on every port in use (if core/distrobution switch)
-- [ ] Config saved and exported to Git with passwords replaced by placeholders
-
+      
 ## Cisco IOS (3560-CX)
 
 ```

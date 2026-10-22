@@ -52,7 +52,7 @@ One flat network, the way the previous IT provider left it. Build it, then docum
 | printer | 192.168.1.50 (static) | Duplicate address with a staff laptop |
 | staff laptop | 192.168.1.50 (static, hand-set) | The cause of the outage |
 | file server | 192.168.1.10 (static) | Shared by IP, not by name |
-| card terminal | 192.168.1.60 (static) | On the same network as everything else |
+| ATM | 192.168.1.60 (static) | On the same network as everything else |
 | mystery device | 192.168.1.77 | Telnet open, nobody knows what it is |
 
 ## The new office (lv01)
@@ -70,14 +70,12 @@ One flat network, the way the previous IT provider left it. Build it, then docum
 
 | Port | Mode | VLAN | Connected to |
 |---|---|---|---|
-| 1 | Trunk (Phase 2A) / routed (Phase 2B) | 10, 20, 60, 99; native 998 | lv01-edge-01 eth1 |
-| 2 | Access | 10 | teller-01 |
-| 3 | Access | 10 | staff-laptop-01 |
-| 4 | Access | 20 | card-01 |
-| 5 | Access | 60 | files-01 |
-| 6 – 8 | Access, shut down | 999 | unused |
-
-On the real 3560-CX the port names differ (`Gi1/0/1` and so on); keep the same numbering.
+| 1 | - | - | - |
+| 2 | - | - | - |
+| 3 | - | - | - |
+| 4 | - | - | - |
+| 5 | - | - | - |
+| 6 – 12 | - | - | - |
 
 ### Hosts
 

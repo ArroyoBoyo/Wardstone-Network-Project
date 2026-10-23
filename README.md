@@ -2,7 +2,7 @@
 
 Introducing Wardstone Federal Credit Union, a fictional credit union based in Las Vegas, Nevada. This is how I took the business from a single 12-person office to two large offices and three branches, with redundant connectivity across two ISPs.
 
-Every stage starts with a business event. The growth causes real problems, and each problem is reproduced in the lab, fixed with a core networking practice, and proven with before-and-after evidence.
+Every stage starts with a business event. The growth causes real problems, and each problem is reproduced in the lab and then fixed using core networking practices.
 
 I built this in GNS3 using VyOS, Arista EOS, FRR, and Alpine Linux, alongside real Cisco hardware, including a Catalyst 3560-CX switch and a Catalyst 9130 access point.
 

@@ -12,6 +12,7 @@ Every device gets this before it carries any traffic. This is all done manually 
 - [ ] Logging buffered with timestamps and syslog (to the services VM from Stage 3)
 - [ ] Unused ports in VLAN 999 and shut down (Switches only)
 - [ ] Native VLAN 998 on every trunk (Switches only)
+- [ ] Description for deocumenation purposes
 - [ ] Config saved and backed up to Git with passwords replaced
       
 ## Cisco IOS (3560-CX)

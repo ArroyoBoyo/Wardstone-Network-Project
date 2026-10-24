@@ -1,31 +1,36 @@
 # Stage 1: The Takeover
 
-Wardstone Federal Credit Union (WFCU) has 10 staff in a cramped office it's beginning to outgrow, with new hires underway. After an outage nobody could explain, WFCU dropped its old IT provider, who left no documentation, and it has just signed a lease on a new office in Spring Valley.
+Wardstone Federal Credit Union (WFCU) has 12 staff in a cramped office it's beginning to outgrow, with new hires underway. After an outage nobody could explain, WFCU dropped its old IT provider, who left no documentation, and it has just signed a lease on a new office in Spring Valley.
 
 The job: find out what the old network actually is, build the new office properly, and move everyone over one weekend so the doors open on Monday with everything working.
 
 - How I built the old office in the lab: [discovery/lab-setup.md](discovery/lab-setup.md)
 - The new office's addressing plan: [design.md](design.md)
 
+## What I walked into
+
+- **A linear network full of single points of failure:** three desk switches daisy-chained off the MDF switch, so one dead switch takes down every desk behind it
+- **One flat network:** every device, including the ATM and guests on the Wi-Fi, shares one VLAN and one subnet
+- **No documentation:** no diagram, no inventory, no labels, and no passwords handed over
+- A duplicate IP and devices still on their factory defaults
+
 ## Phases
 
 | Phase | What I need to do | What I'll deliver |
 |---|---|---|
 | 1. Discovery | Map the inherited network as if I'd never seen it | Discovery report: inventory and as-is diagram |
-| 2. Design and build | Build the new office in GNS3 (2A), then on the real switch (2B) | Address plan, to-be diagram, configs, problem write-ups |
-| 3. Cutover | Move every device to the new network in one planned window | Runbook, before-and-after tests, after-action report |
-
+| 2. Stabilize | Fix what's breaking things today, without redesigning anything yet | Duplicate IP fixed, default passwords changed, devices hardened, configs backed up |
+| 3. Rebuild | Replace the switch chain, split the network into VLANs, document, and re-address every device after hours | Design, change records with rollback plans, configs, before-and-after tests |
 ## Problems
 
 | # | Problem | Concepts | Write-up |
 |---|---|---|---|
-| 1.1 | Nobody knows what's on the network | Discovery: ping sweep, ARP and MAC tables | [ ] |
-| 1.2 | The outage nobody could explain | Duplicate IP, ARP, DHCP reservations | [ ] |
-| 1.3 | One flat network for everything | VLANs, trunks, inter-VLAN routing | [ ] |
-| 1.4 | One public address for the whole office | Default route, NAT, DNS | [ ] |
-| 1.5 | An ACL that blocks core banking | ACL order, implicit deny | [ ] |
-| 1.6 | Devices nobody can trust | SSH, NTP, logging, hardening | [ ] |
-| 1.7 | Moving everyone in one weekend | Cutover planning, rollback | [ ] |
+| 1.1 | Nobody knows what's on the network | Discovery sweep and proper documention | [ ] |
+| 1.2 | The outage nobody could explain | Duplicate IP, and DHCP reservations | [ ] |
+| 1.3 | A daisy chain of desk switches | Single points of failure, star topology, structured cabling | [ ] |
+| 1.4 | One flat network for everything | VLANs, subnets, trunks, inter-VLAN routing | [ ] |
+| 1.5 | A firewall rule that blocks core banking | Rule order, implicit deny | [ ] |
+| 1.6 | Re-addressing a live office | Change windows, rollback, DNS names over IPs | [ ] |
 
 ## Verification
 
@@ -33,7 +38,7 @@ Reachability matrix, run before the move (old network) and after (new network).
 
 Old network: every device can reach every other device, including the ATM.
 
-| From \ To | STAFF | CARD | SERVERS | MGMT | corebank 443 | Internet |
+| From \ To | STAFF | CARD | SERVERS | MGMT | corebank | Internet |
 |---|---|---|---|---|---|---|
 | STAFF | | | | | | |
 | CARD | | | | | | |
@@ -41,11 +46,27 @@ Old network: every device can reach every other device, including the ATM.
 
 ## Progress
 
-- [ ] Old office built in GNS3 and its discovery report written (`discovery/`)
-- [ ] Floor plan of the new office, MDF rack setup, and new network design
-- [ ] Address and VLAN plan for the new office written before any config
-- [ ] Phase 2A built and verified in GNS3
-- [ ] Real 3560-CX reset, software updated, baseline config applied
-- [ ] Phase 2B cutover, with the same tests passing on the real switch
-- [ ] Cutover runbook, the move, and the after-action report (`cutover/`)
-- [ ] Problems 1.1 to 1.7 written up; configs, diagrams and the GNS3 project exported
+**Discovery**
+
+- [x] Office "as found" built in GNS3
+- [ ] Discovery sweep: every device inventoried, including the hidden desk switches 
+- [ ] Old office issues that need to be addressed immediately
+
+**Stabilize**
+
+- [ ] Duplicate IP traced and fixed, DHCP pool moved off the static addresses
+- [ ] Default passwords changed, baseline config applied
+
+**Rebuild in place**
+
+- [ ] New network design: star topology, VLAN and address plan
+- [ ] Desk-switch chain replaced with one MDF switch
+- [ ] Firewall swapped in for the consumer router
+- [ ] VLANs, trunk and firewall rules built
+- [ ] Devices re-addressed in after-hours change windows
+- [ ] Real 3560-CX takes over its slice of the office, with the same tests passing
+
+**Wrap-up**
+
+- [ ] Reachability matrix run before and after
+- [ ] Problems written up; configs, diagrams and the GNS3 project exported for project proof

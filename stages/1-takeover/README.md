@@ -7,7 +7,9 @@ WFCU needs help right away. The job: find out what's actually on the network, st
 (The move to a new building comes in a later stage)
 
 - How I built the old office in the lab: [lab-setup.md](lab-setup.md)
-- The new office's addressing plan: [design.md](design.md)
+- The new office's addressing plan: [addr-design.md](addr-design.md)
+- The new office's network plan: [rebuild-design.md](rebuild-design.md)
+
 
 ## What I walked into
 

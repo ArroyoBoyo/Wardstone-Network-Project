@@ -1,6 +1,6 @@
 # Stage 1: The Takeover
 
-Wardstone Federal Credit Union (WFCU) has 10 staff in its Spring Valley office, with new hires on the way. After an outage nobody could explain, WFCU fired its IT provider, who left no documentation behind.
+Wardstone Federal Credit Union (WFCU) has 12 staff in its Spring Valley office, with new hires on the way. After an outage nobody could explain, WFCU fired its IT provider, who left no documentation behind.
 
 WFCU needs help right away. The job: find out what's actually on the network, stop the outages, and turn what's there into a proper small-office network, with a real firewall instead of a consumer router. All of it happens in the office they're already in, without closing the doors.
 

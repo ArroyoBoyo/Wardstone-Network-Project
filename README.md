@@ -29,7 +29,7 @@ This will hold links to the strongest problem write-ups per stage, growing as st
 - **Standards:** addressing, naming, physical design, and the baseline config every device gets (this comes later via proper management transition) (`docs/standards/`)
 - **Physical design:** floor plans, closet (MDF/IDF) layouts in each stage's `diagrams/` folder
 
-## Rebuilding a stage
+## Rebuilding a stage in GNS3
 
 Each stage folder will hold an exported GNS3 project and the final config of every device 
 

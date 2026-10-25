@@ -1,4 +1,4 @@
-# Stage 1: Rebuild design
+# Stage 1: Address design
 
 The plan for rebuilding the office in place, following the [addressing standards](../../docs/standards/addressing.md):
 

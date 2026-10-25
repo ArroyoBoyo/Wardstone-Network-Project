@@ -11,7 +11,7 @@ I built this in GNS3 using VyOS, Arista EOS, FRR, and Alpine Linux, alongside re
 
 | Stage | Size | What goes wrong | Status |
 |---|---|---|---|
-| [1 The Takeover](stages/1-takeover/) | 10-12 staff, moving offices | An undocumented network from previous IT, a duplicate IP behind an outage, a flat network, a weekend move | In progress |
+| [1 The Takeover](stages/1-takeover/) | 12 staff, one office | An undocumented network from the previous IT, a daisy chain of desk switches, a duplicate IP behind an outage, a flat network, etc | In progress |
 | [2 Locking It Down](stages/2-locking-it-down/) | About 20 staff, Wi-Fi | Rogue DHCP, a desk switch loop, ARP spoofing, a laptop in the ATM port | Planning |
 | [3 Headquarters](stages/3-headquarters/) | 60 staff | Single points of failure, a stolen STP root, a shared Wi-Fi password | Planning |
 | [4 Multiple Locations](stages/4-multiple-locations/) | HQ + 3 branches | Static routes that don't scale, OSPF stuck over a tunnel, choppy calls | Planning |

@@ -6,6 +6,8 @@ Every stage starts with a business event. The growth causes real problems, and e
 
 I built this in GNS3 using VyOS, Arista EOS, FRR, and Alpine Linux, alongside real Cisco hardware, including a Catalyst 3560-CX switch and a Catalyst 9130 access point.
 
+*final topology will go here*
+
 # Final architecture diagram will go here #
 ## Stages
 

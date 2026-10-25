@@ -24,7 +24,6 @@ This will hold links to the strongest problem write-ups per stage, growing as st
 ## How it's documented
 
 - **Problems:** every problem has a write-up with symptom, cause, and a fix with proof (`stages/<n>/problems/`)
-- **Postmortems:** the biggest incidents in each stage, how we fixed them (`docs/postmortems/`)
 - **Change records:** one per fix, with a rollback plan (`docs/changes/`)
 - **Design decisions:** why one option was chosen over another (`docs/decisions/`)
 - **Standards:** addressing, naming, physical design, and the baseline config every device gets (this comes later via proper management transition) (`docs/standards/`)

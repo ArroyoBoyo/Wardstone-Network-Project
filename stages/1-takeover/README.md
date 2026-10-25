@@ -1,10 +1,12 @@
 # Stage 1: The Takeover
 
-Wardstone Federal Credit Union (WFCU) has 12 staff in a cramped office it's beginning to outgrow, with new hires underway. After an outage nobody could explain, WFCU dropped its old IT provider, who left no documentation, and it has just signed a lease on a new office in Spring Valley.
+Wardstone Federal Credit Union (WFCU) has 10 staff in its Spring Valley office, with new hires on the way. After an outage nobody could explain, WFCU fired its IT provider, who left no documentation behind.
 
-The job: find out what the old network actually is, build the new office properly, and move everyone over one weekend so the doors open on Monday with everything working.
+WFCU needs help right away. The job: find out what's actually on the network, stop the outages, and turn what's there into a proper small-office network, with a real firewall instead of a consumer router. All of it happens in the office they're already in, without closing the doors.
 
-- How I built the old office in the lab: [discovery/lab-setup.md](discovery/lab-setup.md)
+(The move to a new building comes in a later stage)
+
+- How I built the old office in the lab: [lab-setup.md](lab-setup.md)
 - The new office's addressing plan: [design.md](design.md)
 
 ## What I walked into

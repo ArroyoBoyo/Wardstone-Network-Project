@@ -27,11 +27,11 @@ This will hold links to the strongest problem write-ups per stage, growing as st
 - **Change records:** one per fix, with a rollback plan (`docs/changes/`)
 - **Design decisions:** why one option was chosen over another (`docs/decisions/`)
 - **Standards:** addressing, naming, physical design, and the baseline config every device gets (this comes later via proper management transition) (`docs/standards/`)
-- **Physical design:** floor plans, closet (MDF/IDF) layouts, and (maybe) bills of materials in each stage's `diagrams/` folder
+- **Physical design:** floor plans, closet (MDF/IDF) layouts in each stage's `diagrams/` folder
 
 ## Rebuilding a stage
 
-Each stage folder will hold an exported GNS3 project (`gns3/`) and the final config of every device (`configs/`). 
+Each stage folder will hold an exported GNS3 project and the final config of every device 
 
 This will allow anyone to import the project into GNS3, start the nodes, and paste each config and test the network for themselves
 

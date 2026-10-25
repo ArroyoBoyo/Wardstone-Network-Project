@@ -9,7 +9,7 @@
 
 | Item | Standard |
 |---|---|
-| Desk cabling | Cat6, horizontal run 90 m or less (100 m including patch cords) |
+| Desk cabling | Cat6 ran for 90 m or less (100 m including patch cords) |
 | Closet to closet | Fiber |
 | Drops per workstation | 2 per desk, 4 per teller station (PC, receipt printer, card terminal and spare) |
 | Printers, card terminals, cameras | 1 each |

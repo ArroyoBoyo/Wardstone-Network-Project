@@ -8,11 +8,11 @@ Every device gets this before it carries any traffic. This is all done manually 
 - [ ] SSH v2 configured for named local accounts only; telnet off
 - [ ] Enable secret for privileged CLI (Cisco and Arista)
 - [ ] Management only on VLAN 99 (or the loopback for routers)
-- [ ] NTP from WFCU-EDGE-0 (from HQ from Stage 3)
-- [ ] Logging buffered with timestamps and syslog (to the services VM from Stage 3)
+- [ ] NTP from the site's edge router or core
+- [ ] Logging buffered with timestamps
 - [ ] Unused ports in VLAN 999 and shut down (Switches only)
 - [ ] Native VLAN 998 on every trunk (Switches only)
-- [ ] Description for deocumenation purposes
+- [ ] A description on every port in use, for documentation
 - [ ] Config saved and backed up to Git with passwords replaced
       
 ## Cisco IOS (3560-CX)

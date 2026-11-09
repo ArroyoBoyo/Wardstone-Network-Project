@@ -32,7 +32,3 @@ EX: jack `A-10` is patch panel A, port 10, in that site's MDF. Jacks served by a
 | Switch port | Patch panel port | Wall jack | VLAN | Device | Notes |
 |---|---|---|---|---|---|
 | Gi1/0/2 | A-02 | A-02 | 10 | teller-01 | |
-
-## Lab note
-
-Designs use real-world sizes, such as a 48-port PoE switch in the Stage 1 MDF. The lab builds a slice of that on the real 8-port 3560-CX, and virtual switches stand in for the rest.

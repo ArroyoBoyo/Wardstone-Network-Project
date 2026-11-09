@@ -32,7 +32,7 @@ A single office switch like Stage 1's stops working at this size, for a few reas
 Two-tier splits the network into two layers:
 
 - **Distribution (or "collapsed core"):** Two switches in the main building's MDF. They connect every building, route between the VLANs, and act as each VLAN's gateway.
-- **Access:** The switches in each building's closet, where the PCs, printers, and APs plug in (Essentually, any host devices)
+- **Access:** The switches in each building's closet, where the PCs, printers, and APs plug in (Essentially, any host devices)
 
 **Why not three-tier?** A separate distribution layer only pays off when there are too many buildings for the core to connect directly. At three buildings and only 120 users, it would add switches and cost without solving a real problem.
 
@@ -48,7 +48,7 @@ Here are the 5 main focuses for this section:
 |---|---|
 | A fiber run between buildings | The second run, through a different conduit |
 | One uplink | The other uplink in the LACP bundle |
-| A core switch | The other core in the bundled pair |
+| A core switch | The other core in the pair |
 | The core holding the gateway | The other core takes over the gateway address via VRRP |
 | The active firewall | The second firewall, without dropping open connections |
 

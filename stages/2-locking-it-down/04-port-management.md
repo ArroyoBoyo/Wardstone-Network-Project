@@ -150,7 +150,7 @@ Simple yet extremely effective, and can be customized across all ports for vario
 
 ## Wrap-up
 
-All three features could go much deeper than what we did in this situation, but what's here is a solid baseline that could be replicated across Wardstone and many other networks.
+All three features could go much deeper than what we did in this simulation, but what's here is a solid baseline that could be replicated across Wardstone and many other networks.
 
 For example, for port security, you can change the violation mode so that it just blocks traffic and logs the activity, compared to shutting down the port
 

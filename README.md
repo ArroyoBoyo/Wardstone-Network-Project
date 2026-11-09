@@ -1,6 +1,8 @@
 # Wardstone Network
 
-Introducing Wardstone Federal Credit Union, a fictional credit union based in Las Vegas, Nevada. This is how I took the business from a single 12-person office, inherited from an IT provider they had just fired, to a redundant campus with branch offices connected over site-to-site VPNs.
+Introducing Wardstone Federal Credit Union, a fictional credit union based in Las Vegas, Nevada. 
+
+This is how I took the business from a single 12-person office, inherited from an IT provider they had just fired, to a redundant campus with branch offices connected over site-to-site VPNs.
 
 Every stage starts with a business event:
 

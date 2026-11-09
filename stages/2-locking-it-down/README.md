@@ -1,4 +1,4 @@
-# Stage 1: The Lock Down
+# Stage 2: The Lock Down
 
 [← Stage 1 overview](../README.md)
 
